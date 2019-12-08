@@ -1,0 +1,15 @@
+---
+- hosts: web01
+  become: yes 
+  gather_facts: false
+  order: sorted
+ 
+  vars: 
+       name: kick
+       uid: 80192
+       comment: test
+  tasks:
+        - name: user creating
+          user: name={{name}} uid={{uid}}
+...
+

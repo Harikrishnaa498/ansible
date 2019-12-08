@@ -1,0 +1,10 @@
+---
+- hosts: web01
+- include: newone.yml
+
+  tasks:
+        - name: getting tomcat 
+          get_url: url=http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.49/bin/apache-tomcat-8.5.49.tar.gz  dest=/home/ubuntu
+       # - name: unarchive
+         # unarchive: src=/home/ubuntu/apache-tomcat-8.5.49.tar.gz dest=/home/ubuntu remote_src=yes
+...

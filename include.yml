@@ -1,0 +1,4 @@
+---
+- include: newone.yml
+  include: nginx.yml
+...

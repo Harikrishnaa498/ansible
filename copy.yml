@@ -1,0 +1,9 @@
+---
+- hosts: web01
+  become: yes
+ 
+  tasks:
+        - name: copying war files
+          copy: src=/home/ubuntu/vprofile-v1.war dest=/home/ubuntu/apache-tomcat-8.5.49/webapps
+...
+

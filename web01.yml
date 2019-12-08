@@ -1,0 +1,9 @@
+---
+- hosts: web01
+  become: yes
+ 
+
+  tasks: 
+        - name: remove apache on client
+          apt: name=apache2 state=absent
+...
